@@ -72,4 +72,25 @@ describe('asserttype', () => {
       [1, 2, 3].should.not.be.boolean();
     });
   });
+
+  describe('Object', () => {
+    it('should be a function', () => {
+      expect(expect({}).to.be.object).to.be.a('function');
+    });
+
+    it('should assert object values', () => {
+      expect({}).to.be.object();
+    });
+
+    it('should throw error when it fails to assert object values', () => {
+      expect(() => expect(1).to.be.object()).to.throw(Error);
+    });
+
+    it('should be false when the actual value is not a object', () => {
+      expect(2).not.to.be.object();
+      2.0.should.not.be.object();
+      expect([1, 2, 3]).not.to.be.object();
+      [1, 2, 3].should.not.be.object();
+    });
+  });
 });
