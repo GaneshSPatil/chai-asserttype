@@ -115,4 +115,25 @@ describe('asserttype', () => {
       'foo'.should.not.be.array();
     });
   });
+
+  describe('Date', () => {
+    it('should be a function', () => {
+      expect(expect(new Date()).to.be.date).to.be.a('function');
+    });
+
+    it('should assert date values', () => {
+      expect(new Date()).to.be.date();
+    });
+
+    it('should throw error when it fails to assert date values', () => {
+      expect(() => expect(1).to.be.date()).to.throw(Error);
+    });
+
+    it('should be false when the actual value is not a date', () => {
+      expect(2).not.to.be.date();
+      2.0.should.not.be.date();
+      expect({}).not.to.be.date();
+      'foo'.should.not.be.date();
+    });
+  });
 });
