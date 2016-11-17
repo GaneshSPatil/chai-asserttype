@@ -93,4 +93,26 @@ describe('asserttype', () => {
       [1, 2, 3].should.not.be.object();
     });
   });
+
+  describe('Array', () => {
+    it('should be a function', () => {
+      expect(expect([]).to.be.array).to.be.a('function');
+    });
+
+    it('should assert array values', () => {
+      expect([1, 2, 3]).to.be.array();
+      [1, 2, 3].should.not.be.object();
+    });
+
+    it('should throw error when it fails to assert array values', () => {
+      expect(() => expect(1).to.be.array()).to.throw(Error);
+    });
+
+    it('should be false when the actual value is not a array', () => {
+      expect(2).not.to.be.array();
+      2.0.should.not.be.array();
+      expect({}).not.to.be.array();
+      'foo'.should.not.be.array();
+    });
+  });
 });
