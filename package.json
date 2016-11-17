@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "Ganesh Patil",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.10.2"
+  },
+  "dependencies": {
+    "check-types": "^7.0.1"
+  }
 }
