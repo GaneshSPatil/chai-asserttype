@@ -1,0 +1,12 @@
+{
+  "name": "chai-asserttype",
+  "version": "1.0.0",
+  "description": "a simple chai plugin for asserting on types",
+  "main": "asserttype.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ganesh Patil",
+  "license": "ISC"
+}
