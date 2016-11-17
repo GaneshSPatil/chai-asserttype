@@ -136,4 +136,25 @@ describe('asserttype', () => {
       'foo'.should.not.be.date();
     });
   });
+
+  describe('Function', () => {
+    it('should be a function', () => {
+      expect(expect(() => true).to.be.function).to.be.a('function');
+    });
+
+    it('should assert function values', () => {
+      expect(() => true).to.be.function();
+    });
+
+    it('should throw error when it fails to assert function values', () => {
+      expect(() => expect(1).to.be.function()).to.throw(Error);
+    });
+
+    it('should be false when the actual value is not a function', () => {
+      expect(2).not.to.be.function();
+      2.0.should.not.be.function();
+      expect({}).not.to.be.function();
+      'foo'.should.not.be.function();
+    });
+  });
 });
