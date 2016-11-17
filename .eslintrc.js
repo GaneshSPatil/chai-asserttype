@@ -119,7 +119,7 @@ module.exports = {
         "no-lone-blocks": "error",
         "no-lonely-if": "error",
         "no-loop-func": "error",
-        "no-magic-numbers": "error",
+        "no-magic-numbers": "off",
         "no-mixed-operators": "error",
         "no-mixed-requires": "error",
         "no-multi-spaces": "error",
@@ -162,10 +162,11 @@ module.exports = {
         "no-throw-literal": "error",
         "no-trailing-spaces": "error",
         "no-undef-init": "error",
-        "no-undefined": "error",
+        "no-undefined": "off",
         "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
-        "no-unused-expressions": "error",
+        "no-unused-expressions": "off",
+        "no-unused-vars": "off",
         "no-use-before-define": "error",
         "no-useless-call": "error",
         "no-useless-computed-key": "error",
@@ -183,7 +184,7 @@ module.exports = {
         "object-curly-spacing": "error",
         "object-property-newline": "error",
         "object-shorthand": "error",
-        "one-var": "error",
+        "one-var": "off",
         "one-var-declaration-per-line": "error",
         "operator-assignment": "error",
         "operator-linebreak": "error",
@@ -236,5 +237,9 @@ module.exports = {
         "wrap-regex": "error",
         "yield-star-spacing": "error",
         "yoda": "error"
+    },
+    "globals": {
+        "it": true,
+        "describe": true
     }
 };
