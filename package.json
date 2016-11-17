@@ -6,9 +6,14 @@
   "scripts": {
     "test": "./node_modules/.bin/eslint asserttype.js test && ./node_modules/mocha/bin/mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaneshSPatil/chai-asserttype.git"
+  },
   "keywords": [],
   "author": "Ganesh Patil",
   "license": "ISC",
+  "homepage": "https://github.com/GaneshSPatil/chai-asserttype#README.md",
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.10.2",
