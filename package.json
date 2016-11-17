@@ -1,6 +1,6 @@
 {
   "name": "chai-asserttype",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple chai plugin for asserting on types",
   "main": "asserttype.js",
   "scripts": {
