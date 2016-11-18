@@ -1,6 +1,6 @@
 {
   "name": "chai-asserttype",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a simple chai plugin for asserting on types",
   "main": "asserttype.js",
   "scripts": {
@@ -29,9 +29,6 @@
   },
   "engines": {
     "node": ">=0.10"
-  },
- "peerDependencies": {
-    "chai": ">=3.5.0 <4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
