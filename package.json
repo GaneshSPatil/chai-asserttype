@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/GaneshSPatil/chai-asserttype.git"
   },
-  "keywords": [],
+  "keywords": ["chai", "chai-plugin"],
   "author": "Ganesh Patil",
   "license": "ISC",
   "homepage": "https://github.com/GaneshSPatil/chai-asserttype#README.md",
