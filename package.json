@@ -1,6 +1,6 @@
 {
   "name": "chai-asserttype",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a simple chai plugin for asserting on types",
   "main": "asserttype.js",
   "scripts": {
@@ -10,12 +10,28 @@
     "type": "git",
     "url": "git+https://github.com/GaneshSPatil/chai-asserttype.git"
   },
-  "keywords": ["chai", "chai-plugin", "testing", "assertions", "type"],
+  "keywords": [
+    "chai",
+    "chai-plugin",
+    "chaiplugin",
+    "testing",
+    "assert",
+    "expect",
+    "assertions",
+    "match",
+    "isMatch"
+  ],
   "author": "Ganesh Patil",
   "license": "ISC",
   "homepage": "https://github.com/GaneshSPatil/chai-asserttype#README.md",
   "bugs": {
     "url": "https://github.com/GaneshSPatil/chai-asserttype/issues"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+ "peerDependencies": {
+    "chai": ">=3.5.0 <4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
